@@ -12,19 +12,20 @@
 
 // Header 
 
-.header  { 
+.header {
     &__localisation {
 
         &__description {
-          color: $secondary-font-clr;
-          font-weight: bold;
-        } 
+            color: $secondary-font-clr;
+            font-weight: bold;
+        }
+
         &__icon {
             color: $secondary-font-clr;
         }
-       
+
     }
-    
+
 }
 
 //Partie Réservation
@@ -41,3 +42,20 @@
     }
 }
 
+
+
+.fonctionnement {
+    &__container {
+        &__box{
+        &__boxFlex {
+            &__number {
+
+                color: $btn-font;
+                font-size: 14px;
+            }
+            &__text {
+                font-weight: bold;
+            }
+        }}
+    }
+}
