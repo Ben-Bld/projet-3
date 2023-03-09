@@ -120,6 +120,9 @@ html, body {
 .fonctionnement__container__box--active {
   background-color: rgb(233, 220, 248);
 }
+.fonctionnement__container__box--active i {
+  color: #9356DC;
+}
 .fonctionnement__container__box__boxFlex {
   display: flex;
 }
