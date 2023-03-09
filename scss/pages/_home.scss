@@ -1,9 +1,23 @@
 .reservation {
     text-align: center;
-    h1 {
-        width: 80%
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    padding-bottom: 40px;
+
+    &__title {
+        width: 60%;
+        margin: auto;
+        padding: 40px 0 5px
     }
-    p {
+
+    &__description {
         width: 80%;
+        min-width: 70%;
+        margin: auto;
+        padding: 10px 0 20px;
     }
+
 }

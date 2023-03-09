@@ -1,5 +1,5 @@
-header {
-    .logoTop {
+.header {
+    &__logoTop {
 
         background-color: $background;
         text-align: center;
@@ -10,22 +10,28 @@ header {
         
         width: 100%;
 
-        img {
+        &__img {
             margin: auto;
             height: 25px;
 
         }
     }
 
-    .localisation {
-        background-color: $background;
+    &__localisation {
+        background-color: $secondary-background;
         text-align: center;
         display: flex;
         justify-content: center;
         padding: 18px 0;
-        box-shadow: inset 0 6px 6px -6px rgb(152, 152, 152);
-       
-        i {
-    }
+        box-shadow: inset 0 6px 6px -6px rgb(173, 173, 173);
+        
+        &__description {
+            position: absolute;
+        }
+       &__icon {
+        padding-right: 150px;
+       }
+        
     
-    }}
+    }
+}

@@ -8,27 +8,33 @@
     <title>Document</title>
     <link rel="stylesheet" href="dist/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/98fed33de8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/98fed33de8.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="logoTop">
-            <img src="Maquette Ohmyfood/images/logo/ohmyfood.png" alt="Logo OhMyfood">
-        </div>
-        <div class="localisation">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Paris, Belleville</p>            
+        <div class="header">
+            <div class="header__logoTop">
+                <img class="header__logoTop__img" src="Maquette Ohmyfood/images/logo/ohmyfood.png" alt="Logo OhMyfood">
+            </div>
+            <div class="header__localisation">
+                <i class="fa-solid fa-location-dot  header__localisation__icon"></i>
+                <p class="header__localisation__description">Paris, Belleville</p>
+            </div>
         </div>
     </header>
 
-    <div class="reservation">
-        <h1>Réservez le menu qui vous convient</h1>
-        <p>Découvrez des restaurants d'exception, selectionés par nos soins.</p>
-        <button>Explorer nos restaurants</button>
-    </div>
+    <section>
+        <div class="reservation">
+            <h1 class="reservation__title">Réservez le menu qui vous convient</h1>
+            <p class="reservation__description">Découvrez des restaurants d'exception, selectionés par nos soins.</p>
+            <button class="reservation__btn btnGlobal">Explorer nos restaurants</button>
+        </div>
+    </section>
+
 
     <!-- <div class="fonctionnement">
         <h2>Fonctionnement</h2>
