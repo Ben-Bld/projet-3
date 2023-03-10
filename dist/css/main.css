@@ -40,6 +40,13 @@ html, body {
 .fonctionnement__container__box__boxFlex__text {
   font-weight: bold;
 }
+.fonctionnement__container__box__boxFlex__icon {
+  font-size: 18px;
+}
+
+.restaurants__container__card__description__titre {
+  font-weight: bold;
+}
 
 .header__logoTop {
   background-color: white;
@@ -105,6 +112,7 @@ html, body {
 .fonctionnement__container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
 }
 .fonctionnement__container__box {
   display: flex;
@@ -114,7 +122,7 @@ html, body {
   padding: 20px;
   margin: 10px auto 10px 20px;
   width: 80%;
-  height: 35px;
+  height: 32px;
   box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
 }
 .fonctionnement__container__box--active {
@@ -143,4 +151,36 @@ html, body {
 .fonctionnement__container__box__boxFlex__icon {
   color: #747474;
   translate: -10px 9px;
+}
+
+.restaurants {
+  background-color: hsl(0, 0%, 94%);
+}
+.restaurants__container__titre1 {
+  padding-top: 50px;
+}
+.restaurants__container__card {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  border-radius: 30px;
+  width: 90%;
+  padding-top: 20px;
+}
+.restaurants__container__card__img {
+  border-top-right-radius: 30px;
+  border-top-left-radius: 30px;
+  height: 200px;
+}
+.restaurants__container__card__description {
+  padding: 12px;
+  background-color: white;
+  border-bottom-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+.restaurants__container__card__description__titre {
+  padding: 0 5px 5px;
+}
+.restaurants__container__card__description__lieu {
+  padding: 0 5px 5px;
 }

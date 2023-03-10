@@ -22,6 +22,7 @@
 
         &__icon {
             color: $secondary-font-clr;
+
         }
 
     }
@@ -46,16 +47,34 @@
 
 .fonctionnement {
     &__container {
-        &__box{
-        &__boxFlex {
-            &__number {
+        &__box {
+            &__boxFlex {
+                &__number {
 
-                color: $btn-font;
-                font-size: 14px;
+                    color: $btn-font;
+                    font-size: 14px;
+                }
+
+                &__text {
+                    font-weight: bold;
+                }
+
+                &__icon {
+                    font-size: 18px;
+                }
             }
-            &__text {
-                font-weight: bold;
-            }
-        }}
+        }
     }
+}
+
+.restaurants {
+    &__container {
+        &__card {
+            &__description {
+                    &__titre {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
 }
