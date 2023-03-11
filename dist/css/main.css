@@ -48,6 +48,12 @@ html, body {
   font-weight: bold;
 }
 
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
 .header__logoTop {
   background-color: white;
   text-align: center;
@@ -73,6 +79,27 @@ html, body {
 }
 .header__localisation__icon {
   padding-right: 150px;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(56, 56, 56);
+  padding-top: 4%;
+}
+.footer__imgFooter {
+  filter: invert(1);
+  height: 20px;
+  translate: -30%;
+  padding-bottom: 10px;
+}
+.footer__blocLiens {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10%;
+}
+.footer__blocLiens__link {
+  padding-top: 5px;
 }
 
 .btnGlobal {
@@ -126,7 +153,7 @@ html, body {
   border-radius: 20px;
   padding: 20px;
   margin: 10px auto 10px 20px;
-  width: 80%;
+  width: 85%;
   height: 32px;
   box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
 }
@@ -160,6 +187,9 @@ html, body {
 
 .restaurants {
   background-color: hsl(0, 0%, 96%);
+}
+.restaurants__container {
+  padding-bottom: 70px;
 }
 .restaurants__container__titre1 {
   padding: 50px 0 0 20px;
@@ -202,4 +232,12 @@ html, body {
   width: 65px;
   border-radius: 2px;
   font-weight: 600;
+}
+.restaurants__container__card__description__nouveau--disabled {
+  display: none;
+}
+.restaurants__container__card__description__heart {
+  float: right;
+  margin-top: -40px;
+  font-size: 25px;
 }
