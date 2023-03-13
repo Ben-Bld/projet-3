@@ -170,18 +170,30 @@ html, body {
 }
 .spinnerContainer__box__spinner {
   color: #9356DC;
-  font-size: 6em;
+  font-size: 8em;
   animation: spinnerRotation;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-duration: 5s;
 }
 @keyframes spinnerRotation {
-  from {
+  0% {
+    opacity: 0%;
     transform: rotate(0deg);
   }
-  to {
-    transform: rotate(720deg);
+  30% {
+    opacity: 80%;
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -400px;
+    opacity: 100%;
+    color: #ff46cc;
+  }
+  100% {
+    opacity: 20%;
+    translate: 0px -400px;
+    transform: rotate(900deg);
   }
 }
 @keyframes fadeBlock {
