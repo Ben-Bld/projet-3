@@ -67,7 +67,7 @@ html, body {
   height: 30px;
 }
 .header__localisation {
-  background-color: rgb(236, 236, 236);
+  background-color: #eaeaea;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -84,8 +84,9 @@ html, body {
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: rgb(56, 56, 56);
-  padding-top: 4%;
+  background-color: #353535;
+  padding-top: 6%;
+  padding-bottom: 9%;
 }
 .footer__imgFooter {
   filter: invert(1);
@@ -117,6 +118,39 @@ html, body {
   transition: box-shadow 0.2s ease-in-out;
 }
 
+.restaurants__container__card__description__containerHeart {
+  float: right;
+  translate: -10px -45px;
+  padding: 0;
+  margin: 0;
+}
+.restaurants__container__card__description__containerHeart__heart {
+  font-size: 28px;
+  overflow: hidden;
+}
+.restaurants__container__card__description__containerHeart__heart1 {
+  position: absolute;
+}
+.restaurants__container__card__description__containerHeart__heart2 {
+  position: relative;
+  color: transparent;
+}
+.restaurants__container__card__description__containerHeart__heart2:hover {
+  background: linear-gradient(45deg, #FF79DA 0%, #9356DC 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  animation: grow 0.2s 1;
+  overflow: hidden;
+}
+
+@keyframes grow {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 .reservation {
   text-align: center;
   width: 100%;
@@ -149,16 +183,16 @@ html, body {
 .fonctionnement__container__box {
   display: flex;
   flex-direction: row;
-  background-color: hsl(0, 0%, 96%);
+  background-color: #f7f7f7;
   border-radius: 20px;
   padding: 20px;
-  margin: 10px auto 10px 20px;
-  width: 85%;
+  margin: 10px 10px 10px 20px;
+  min-width: 80%;
   height: 32px;
   box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
 }
 .fonctionnement__container__box--active {
-  background-color: rgb(233, 220, 248);
+  background-color: #f5edff;
 }
 .fonctionnement__container__box--active i {
   color: #9356DC;
@@ -186,7 +220,7 @@ html, body {
 }
 
 .restaurants {
-  background-color: hsl(0, 0%, 96%);
+  background-color: #f7f7f7;
 }
 .restaurants__container {
   padding-bottom: 70px;
@@ -214,6 +248,7 @@ html, body {
   background-color: white;
   border-bottom-right-radius: 30px;
   border-bottom-left-radius: 30px;
+  height: 50px;
 }
 .restaurants__container__card__description__titre {
   padding: 0 5px 5px;
