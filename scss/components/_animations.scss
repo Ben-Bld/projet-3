@@ -7,6 +7,7 @@
                     translate: -10px -45px;
                     padding: 0;
                     margin: 0;
+
                     &__heart {
                         font-size: 28px;
                         overflow: hidden;
@@ -19,17 +20,17 @@
                     &__heart2 {
                         position: relative;
                         color: transparent;
-                    
+
                     }
 
                     &__heart2:hover {
                         background: linear-gradient(45deg, $secondary-clr 0%, $primary-clr 100%);
-                    
+
                         background-clip: text;
                         animation: grow 0.2s 1;
                         overflow: hidden;
                     }
-                    
+
                 }
 
             }
@@ -48,3 +49,77 @@
     }
 
 }
+
+// Spinner homepage
+
+.spinnerContainer {
+    width: 100%;
+    height: 190%;
+    position: fixed;
+    z-index: 2;
+    background-color: $background;
+    display: block;
+    overflow: hidden;
+    animation: fadeBlock;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
+        
+        &__box {
+                text-align: center;
+                padding-top: 20%;
+
+            &__spinner {
+                color: $primary-clr;
+                font-size: 6em;
+                animation: spinnerRotation;
+                animation-timing-function: linear;
+                animation-iteration-count: infinite;
+                animation-duration: 5s;
+            }
+        }
+
+        @keyframes spinnerRotation {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(720deg);
+            }
+        }
+
+
+        @keyframes fadeBlock {
+            0% {
+                opacity: 100%;
+            }
+
+            8% {
+                opacity: 0%;
+            }
+
+            25% {
+                opacity: 0%;
+            }
+
+            50% {
+                opacity: 0%;
+            }
+
+            75% {
+                opacity: 0%;
+            }
+
+            90% {
+                opacity: 0%;
+            }
+
+            100% {
+
+                margin-top: 100vh;
+                width: 100%;
+                height: 0;
+            }
+        }}
