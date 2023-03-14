@@ -70,18 +70,32 @@
 .restaurants {
     &__container {
         &__card {
+            text-decoration: none;
+            color: $footer-background;
             &__description {
-                    &__titre {
-                        font-weight: bold;
-                    }
+                &__titre {
+                    font-weight: bold;
                 }
             }
         }
+    }
 }
 
 
-.footer a {
-    color: $footer-font;
-    text-decoration: none;
-    font-size: 18px;
+.footer {
+    &__blockLiens {
+        &__footerTitle {
+            font-family: 'Shrikhand';
+            font-size: 20px;
+            color: $background;
+            padding: 12px;
+        }
+    }
+
+    a {
+        color: $footer-font;
+        text-decoration: none;
+        font-size: 18px;
+
+    }
 }

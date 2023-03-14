@@ -9,12 +9,14 @@
                     margin: 0;
 
                     &__heart {
-                        font-size: 28px;
+                        font-size: 22px;
                         overflow: hidden;
                     }
 
                     &__heart1 {
                         position: absolute;
+                        color: $main-font-clr;
+
                     }
 
                     &__heart2 {
@@ -28,8 +30,12 @@
 
                         background-clip: text;
                         animation: grow 0.2s 1;
-                        overflow: hidden;
+                        translate: 0.2px ;
+                        transform: scale(1.01);
+                    
                     }
+
+
 
                 }
 
@@ -89,18 +95,19 @@
         30% {
             opacity: 80%;
             translate: 0px 0px;
-            
-            
+
+
         }
-        50%{
+
+        50% {
             translate: 0px -400px;
-            opacity: 100%;
-            color: darken($secondary-clr,10%);
-            
+            opacity: 1%;
+            color: darken($secondary-clr, 10%);
+
         }
-        
+
         100% {
-            opacity: 20%;
+            opacity: 0%;
             translate: 0px -400px;
             transform: rotate(900deg);
         }

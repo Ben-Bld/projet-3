@@ -44,10 +44,20 @@ html, body {
   font-size: 18px;
 }
 
+.restaurants__container__card {
+  text-decoration: none;
+  color: #353535;
+}
 .restaurants__container__card__description__titre {
   font-weight: bold;
 }
 
+.footer__blockLiens__footerTitle {
+  font-family: "Shrikhand";
+  font-size: 20px;
+  color: white;
+  padding: 12px;
+}
 .footer a {
   color: white;
   text-decoration: none;
@@ -125,11 +135,12 @@ html, body {
   margin: 0;
 }
 .restaurants__container__card__description__containerHeart__heart {
-  font-size: 28px;
+  font-size: 22px;
   overflow: hidden;
 }
 .restaurants__container__card__description__containerHeart__heart1 {
   position: absolute;
+  color: rgb(98, 98, 98);
 }
 .restaurants__container__card__description__containerHeart__heart2 {
   position: relative;
@@ -140,7 +151,8 @@ html, body {
   -webkit-background-clip: text;
           background-clip: text;
   animation: grow 0.2s 1;
-  overflow: hidden;
+  translate: 0.2px;
+  transform: scale(1.01);
 }
 
 @keyframes grow {
@@ -187,11 +199,11 @@ html, body {
   }
   50% {
     translate: 0px -400px;
-    opacity: 100%;
+    opacity: 1%;
     color: #ff46cc;
   }
   100% {
-    opacity: 20%;
+    opacity: 0%;
     translate: 0px -400px;
     transform: rotate(900deg);
   }
@@ -258,7 +270,6 @@ html, body {
   border-radius: 20px;
   padding: 20px;
   margin: 10px 10px 10px 20px;
-  min-width: 80%;
   height: 32px;
   box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
 }
@@ -293,11 +304,11 @@ html, body {
 .restaurants {
   background-color: #f7f7f7;
 }
+.restaurants__titre1 {
+  padding: 50px 0 0 20px;
+}
 .restaurants__container {
   padding-bottom: 70px;
-}
-.restaurants__container__titre1 {
-  padding: 50px 0 0 20px;
 }
 .restaurants__container__card {
   margin: auto;
@@ -346,4 +357,56 @@ html, body {
   float: right;
   margin-top: -40px;
   font-size: 25px;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-color: #eaeaea;
+  }
+  .restaurants__container {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+    flex: 50%;
+  }
+  .restaurants__container__card {
+    height: 40%;
+    width: 10%;
+    flex: 50%;
+    transform: scale(0.95);
+  }
+  header,
+  section,
+  .fonctionnement {
+    border-left: 2px solid #eaeaea;
+    border-right: 2px solid #eaeaea;
+    width: 90%;
+    margin: auto;
+    background: white;
+  }
+  header__titre,
+  section__titre,
+  .fonctionnement__titre {
+    text-align: center;
+  }
+  header__container,
+  section__container,
+  .fonctionnement__container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  header__container__box,
+  section__container__box,
+  .fonctionnement__container__box {
+    width: 25%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  header__container__box__boxFlex__text,
+  section__container__box__boxFlex__text,
+  .fonctionnement__container__box__boxFlex__text {
+    margin: auto;
+    translate: 15px 2%;
+  }
 }
