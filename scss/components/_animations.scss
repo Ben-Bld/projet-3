@@ -30,9 +30,9 @@
 
                         background-clip: text;
                         animation: grow 0.2s 1;
-                        translate: 0.2px ;
+                        translate: 0.2px;
                         transform: scale(1.01);
-                    
+
                     }
 
 
@@ -146,4 +146,32 @@
             height: 0;
         }
     }
+}
+
+//animation menus
+
+
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        translate: 0 0;
+    }
+
+    100% {
+        opacity: 1;
+        translate: 0 7px;
+    }
+}
+
+.box1 {
+    animation: 0.2s fadein forwards;
+}
+
+.box2 {
+    animation: 1s fadein forwards;
+}
+
+.box3 {
+    animation: 1.8s fadein forwards;
 }

@@ -72,6 +72,7 @@
         &__card {
             text-decoration: none;
             color: $footer-background;
+
             &__description {
                 &__titre {
                     font-weight: bold;
@@ -97,5 +98,22 @@
         text-decoration: none;
         font-size: 18px;
 
+    }
+}
+
+
+//pages menu
+
+.menu {
+
+    &__container {
+        &__title {
+            &__textTitle {
+                font-family: Shrikhand;
+                font-size: 25px;
+
+            }
+
+        }
     }
 }
