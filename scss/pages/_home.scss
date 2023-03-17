@@ -39,7 +39,7 @@
         &__box {
             display: flex;
             flex-direction: row;
-            background-color: $fourth-background;
+            background-color: $third-background;
             border-radius: 20px;
             padding: 20px;
             margin: 10px 10px 10px 20px;
@@ -88,7 +88,7 @@
 // Partie Restaurants
 
 .restaurants {
-    background-color: $fourth-background;
+    background-color: $third-background;
 
     &__titre1 {
         padding: 50px 0 0 20px;

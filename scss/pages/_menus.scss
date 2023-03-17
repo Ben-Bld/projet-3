@@ -12,36 +12,6 @@
         background: $third-background;
         padding-bottom: 6%;
 
-        &__title {
-            padding: 6% 4% 3% 2%;
-
-            &__textTitle {
-                padding-left: 2%;
-            }
-        }
-
-        &__link {
-            &__a {
-                padding: 8% 3%;
-            }
-
-            &__box {
-
-                padding-left: 2%;
-                background-color: $background;
-                width: 95%;
-                margin: auto;
-                margin-bottom: 3%;
-                padding-bottom: 3%;
-                box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
-                border-radius: 15px;
-                &__plat{
-                    font-weight: bold;
-                }
-
-            }
-        }
-
         &__category {
             padding: 2%;
             text-transform: uppercase;
@@ -54,10 +24,46 @@
             width: 40px;
             border-bottom: 3px solid $third-clr;
         }
+        &__title {
+            padding: 6% 4% 3% 2%;
+
+            &__textTitle {
+                padding-left: 2%;
+            }
+        }
+
+        &__link {
+            display: flex;
+            &__a {
+                padding: 8% 3%;
+            }
+
+            &__box {
+                display: flex;
+                justify-content: space-evenly;
+                padding-left: 2%;
+                background-color: $background;
+                width: 95%;
+                
+                margin: auto;
+                margin-bottom: 3%;
+                padding-bottom: 3%;
+                box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
+                border-radius: 15px;
+                
+                &__all{
+                &__plat{
+                    font-weight: bold;
+                }
+
+            }
+        }
+
+       
 
     }
 }
-
+}
 #hearts__menu {
     translate: -20% 23%;
     position: relative;

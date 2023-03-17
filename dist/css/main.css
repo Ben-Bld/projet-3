@@ -130,7 +130,7 @@ a {
   padding-top: 5px;
 }
 
-.btnGlobal {
+.reservation__btn {
   margin: auto;
   padding: 14px 20px;
   color: white;
@@ -138,11 +138,26 @@ a {
   border-radius: 30px;
   box-shadow: 0px 5px 15px 2px rgba(186, 186, 186, 0.432);
   background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
+  position: relative;
+  z-index: 1;
 }
-.btnGlobal:hover {
-  background: #ae80e5;
-  box-shadow: 0px 0px 15px 7px rgba(153, 153, 153, 0.246);
-  transition: box-shadow 0.2s ease-in-out;
+.reservation__btn:hover::after {
+  opacity: 1;
+}
+.reservation__btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(circle, #a16be0 0%, #8845d9 100%);
+  box-shadow: 0px 5px 15px 2px rgba(186, 186, 186, 0.432);
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 250ms;
+  overflow: hidden;
+  border-radius: 30px;
 }
 
 .restaurants__container__card__description__containerHeart {
@@ -169,7 +184,7 @@ a {
           background-clip: text;
   animation: grow 0.2s 1;
   translate: 0.2px;
-  transform: scale(1.01);
+  transform: scale(1.03);
 }
 
 @keyframes grow {
@@ -258,21 +273,49 @@ a {
   }
   100% {
     opacity: 1;
-    translate: 0 10px;
+    translate: 0 7px;
   }
 }
 .box1 {
   animation: 0.2s fadein forwards;
+  width: 90%;
 }
 
 .box2 {
-  animation: 0.8s fadein forwards;
+  animation: 0.6s fadein forwards;
 }
 
 .box3 {
   animation: 1.3s fadein forwards;
 }
 
+.containerValider {
+  background-color: rgb(0, 60, 255);
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  width: 90%;
+  visibility: hidden;
+  right: -20px;
+}
+.containerValider__boutonValider {
+  color: red;
+  overflow: hidden;
+}
+
+.box1:hover .containerValider {
+  width: 300%;
+  visibility: visible;
+  animation: slide 1s forwards;
+}
+
+@keyframes slide {
+  0% {
+    right: -20px;
+  }
+  100% {
+    right: 0px;
+  }
+}
 .reservation {
   text-align: center;
   width: 100%;
@@ -410,28 +453,6 @@ a {
   background: #f7f7f7;
   padding-bottom: 6%;
 }
-.menu__container__title {
-  padding: 6% 4% 3% 2%;
-}
-.menu__container__title__textTitle {
-  padding-left: 2%;
-}
-.menu__container__link__a {
-  padding: 8% 3%;
-}
-.menu__container__link__box {
-  padding-left: 2%;
-  background-color: white;
-  width: 95%;
-  margin: auto;
-  margin-bottom: 3%;
-  padding-bottom: 3%;
-  box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
-  border-radius: 15px;
-}
-.menu__container__link__box__plat {
-  font-weight: bold;
-}
 .menu__container__category {
   padding: 2%;
   text-transform: uppercase;
@@ -441,6 +462,33 @@ a {
   display: block;
   width: 40px;
   border-bottom: 3px solid #99E2D0;
+}
+.menu__container__title {
+  padding: 6% 4% 3% 2%;
+}
+.menu__container__title__textTitle {
+  padding-left: 2%;
+}
+.menu__container__link {
+  display: flex;
+}
+.menu__container__link__a {
+  padding: 8% 3%;
+}
+.menu__container__link__box {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 2%;
+  background-color: white;
+  width: 95%;
+  margin: auto;
+  margin-bottom: 3%;
+  padding-bottom: 3%;
+  box-shadow: 0px 5px 5px 2px rgba(186, 186, 186, 0.432);
+  border-radius: 15px;
+}
+.menu__container__link__box__all__plat {
+  font-weight: bold;
 }
 
 #hearts__menu {
