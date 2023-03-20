@@ -14,7 +14,9 @@ $secondary-clr: #FF79DA;
 $third-clr: #99E2D0;
 
 
-$btn-font: white;
+$btn-font: white; 
 $btn-gradient: linear-gradient(355deg, $primary-clr 0%, $secondary-clr 100%);
 
 $icon-clr: #747474;
+
+$font-size: (btn:16px, title: 24px, description: 18px, number: 14px, footer: 12px); 

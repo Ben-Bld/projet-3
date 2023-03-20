@@ -13,3 +13,10 @@ a {
   text-decoration: none;
   color: black;
 }
+
+footer{
+  color: $btn-font;
+  a{
+    color: $btn-font;
+  }
+}

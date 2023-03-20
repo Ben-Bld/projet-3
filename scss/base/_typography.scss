@@ -1,7 +1,7 @@
 // GLobal
 
 .btnGlobal {
-    font-size: 16px;
+    font-size: map-get($font-size, btn);
 }
 
 
@@ -33,17 +33,15 @@
 
 .reservation {
     &__title {
-        font-size: 24px;
+        font-size: map-get($font-size, title);
         font-weight: 900;
     }
 
     &__description {
-        font-size: 18px;
+        font-size: map-get($font-size, description);
         font-weight: 300;
     }
 }
-
-
 
 .fonctionnement {
     &__container {
@@ -52,7 +50,7 @@
                 &__number {
 
                     color: $btn-font;
-                    font-size: 14px;
+                    font-size: map-get($font-size, number);
                 }
 
                 &__text {
@@ -60,60 +58,59 @@
                 }
 
                 &__icon {
-                    font-size: 18px;
+                    font-size: map-get($font-size, description);
                 }
             }
         }
     }
-}
 
-.restaurants {
-    &__container {
-        &__card {
+    .restaurants {
+        &__container {
+            &__card {
+                text-decoration: none;
+                color: $footer-background;
+
+                &__description {
+                    &__titre {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+
+    .footer {
+        &__blockLiens {
+            &__footerTitle {
+                font-family: 'Shrikhand';
+                font-size: 20px;
+                color: $background;
+                font-size: map-get($font-size, footer);
+            }
+        }
+
+        a {
+            color: $btn-font;
             text-decoration: none;
-            color: $footer-background;
+            font-size: map-get($font-size, description);
 
-            &__description {
-                &__titre {
-                    font-weight: bold;
+        }
+    }
+
+
+    //pages menu
+
+    .menu {
+        &__container {
+            &__title {
+                &__textTitle {
+                    font-family: Shrikhand;
+                    font-size: map-get($font-size, title);
+
                 }
-            }
-        }
-    }
-}
-
-
-.footer {
-    &__blockLiens {
-        &__footerTitle {
-            font-family: 'Shrikhand';
-            font-size: 20px;
-            color: $background;
-            padding: 12px;
-        }
-    }
-
-    a {
-        color: $btn-font;
-        text-decoration: none;
-        font-size: 18px;
-
-    }
-}
-
-
-//pages menu
-
-.menu {
-
-    &__container {
-        &__title {
-            &__textTitle {
-                font-family: Shrikhand;
-                font-size: 25px;
 
             }
-
         }
     }
 }
