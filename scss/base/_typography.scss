@@ -84,7 +84,6 @@
         &__blockLiens {
             &__footerTitle {
                 font-family: 'Shrikhand';
-                font-size: 20px;
                 color: $background;
                 font-size: map-get($font-size, footer);
             }
@@ -113,4 +112,9 @@
             }
         }
     }
+}
+
+#footerTitle {
+    font-family: Shrikhand;
+    font-size: map-get($font-size, footerTitle);
 }

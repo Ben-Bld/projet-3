@@ -64,7 +64,6 @@ footer a {
 }
 .fonctionnement .footer__blockLiens__footerTitle {
   font-family: "Shrikhand";
-  font-size: 20px;
   color: white;
   font-size: 12px;
 }
@@ -76,6 +75,11 @@ footer a {
 .fonctionnement .menu__container__title__textTitle {
   font-family: Shrikhand;
   font-size: 24px;
+}
+
+#footerTitle {
+  font-family: Shrikhand;
+  font-size: 20px;
 }
 
 .header__logoTop {
@@ -425,6 +429,7 @@ footer a {
 }
 .restaurants__container__card__description__titre {
   padding: 0 5px 5px;
+  font-weight: bold;
 }
 .restaurants__container__card__description__lieu {
   padding: 0 5px 5px;
