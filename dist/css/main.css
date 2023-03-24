@@ -205,7 +205,6 @@ footer a {
 }
 .spinnerContainer {
   width: 100%;
-  height: 190%;
   position: fixed;
   z-index: 2;
   background-color: white;
@@ -288,6 +287,7 @@ footer a {
   animation: 0.4s fadein forwards;
   width: 90%;
   animation-delay: 2s;
+  height: 60px;
 }
 
 .box2 {
@@ -301,32 +301,63 @@ footer a {
 }
 
 .containerValider {
-  background-color: rgb(0, 60, 255);
+  background-color: #99E2D0;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
-  width: 90%;
+  text-overflow: ellipsis;
   visibility: hidden;
   right: -20px;
+  display: none;
 }
 .containerValider__boutonValider {
-  color: red;
-  overflow: hidden;
+  color: white;
+  font-size: 25px;
+  padding: 25px;
 }
 
 .box1:hover .containerValider {
-  width: 300%;
+  width: 20%;
   visibility: visible;
-  animation: slide 1s forwards ease;
-  color: red;
+  animation: slide 0.2s forwards;
   height: 100%;
+  position: absolute;
+  display: block;
 }
 
+.box1:hover .menu__container__link__box__all__plat {
+  width: 50%;
+}
+
+.box1:hover .containerValider__boutonValider {
+  animation: rotate 0.3s forwards;
+}
+
+.box1:hover .menu__container__link__box__all__prix {
+  animation: priceSlide 0.3s forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes slide {
   0% {
     right: -20px;
   }
   100% {
     right: 0px;
+  }
+}
+@keyframes priceSlide {
+  from {
+    right: 0px;
+  }
+  to {
+    right: 80px;
   }
 }
 .reservation {
@@ -503,11 +534,36 @@ footer a {
 }
 .menu__container__link__box__all__plat {
   font-weight: bold;
+  padding: 9px 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__container__link__box__all__plat__details {
+  font-weight: 400;
+  padding: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu__container__link__box__all__prix {
+  font-weight: bold;
+  padding-top: 10%;
+  float: right;
+  position: relative;
 }
 
 #hearts__menu {
   translate: -20% 23%;
   position: relative;
+}
+
+.box1 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: flex;
+  justify-content: space-between;
 }
 
 @media (min-width: 768px) {
