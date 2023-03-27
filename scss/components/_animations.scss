@@ -223,7 +223,7 @@
 
 
 .box1:hover .containerValider {
-    width: 15%;
+    width: 8%;
     visibility: visible;
     animation: slide 0.5s forwards ;
 height: 100%;
@@ -232,7 +232,8 @@ display: block;
 }
 
 .box1 .containerValider {
-    width: 15%;
+    width: 2%; 
+    padding-right: 40px;
     visibility: visible;
     animation: slideReverse 0.5s forwards ;
 height: 100%;
