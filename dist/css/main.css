@@ -587,7 +587,7 @@ footer a {
   justify-content: space-evenly;
   padding-left: 2%;
   background-color: white;
-  width: 95%;
+  width: 92%;
   margin: auto;
   margin-bottom: 3%;
   padding-bottom: 3%;
@@ -603,7 +603,7 @@ footer a {
 }
 .menu__container__link__box__all__plat__details {
   font-weight: 400;
-  padding: 4px;
+  padding: 4px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

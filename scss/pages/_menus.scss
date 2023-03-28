@@ -44,7 +44,7 @@
                 justify-content: space-evenly;
                 padding-left: 2%;
                 background-color: $background;
-                width: 95%;
+                width: 92%;
                 
                 margin: auto;
                 margin-bottom: 3%;
@@ -62,7 +62,7 @@
                     text-overflow: ellipsis;
                     &__details {
                         font-weight: 400;
-                        padding: 4px;
+                        padding: 4px 0;
                         white-space: nowrap;
                         overflow: hidden;
                         text-overflow: ellipsis;
