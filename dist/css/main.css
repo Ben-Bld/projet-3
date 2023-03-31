@@ -100,7 +100,7 @@ footer a {
   color: #353535;
   float: left;
   padding: 10px;
-  translate: 20px -5px;
+  transform: translate(20px, -5px);
 }
 .header__logoTop__img {
   margin: auto;
@@ -131,7 +131,7 @@ footer a {
 .footer__imgFooter {
   filter: invert(1);
   height: 20px;
-  translate: -30%;
+  transform: translate(-30%);
   padding-bottom: 10px;
 }
 .footer__blocLiens {
@@ -180,7 +180,7 @@ footer a {
 
 .restaurants__container__card__description__containerHeart {
   float: right;
-  translate: -10px -45px;
+  transform: translate(-10px, -45px);
   padding: 0;
   margin: 0;
 }
@@ -202,7 +202,7 @@ footer a {
   -webkit-background-clip: text;
           background-clip: text;
   animation: grow 0.2s 1;
-  translate: 0.2px;
+  transform: translate(0.2px);
   transform: scale(1.03);
 }
 
@@ -242,29 +242,27 @@ footer a {
 .spinnerContainer__box__spinner {
   color: #9356DC;
   font-size: 8em;
-  animation: spinnerRotation;
+  animation: spinnerRotation forwards;
   animation-timing-function: linear;
-  animation-iteration-count: forwards;
   animation-duration: 5s;
 }
 @keyframes spinnerRotation {
   0% {
     opacity: 0%;
-    transform: rotate(0deg);
+    transform: translate(0px) rotate(200deg);
   }
   30% {
     opacity: 80%;
-    translate: 0px 0px;
+    transform: translate(0px, 0px) rotate(500deg);
   }
   50% {
-    translate: 0px -400px;
+    transform: translate(0px, -400px) rotate(700deg);
     opacity: 1%;
     color: #ff46cc;
   }
   100% {
     opacity: 0%;
-    translate: 0px -400px;
-    transform: rotate(900deg);
+    transform: rotate(900deg) translate(0, -400px);
   }
 }
 @keyframes fadeBlock {
@@ -296,11 +294,11 @@ footer a {
 @keyframes fadein {
   0% {
     opacity: 0;
-    translate: 0 0;
+    transform: translate(0, 0);
   }
   100% {
     opacity: 1;
-    translate: 0 7px;
+    transform: translate(0, 7px);
   }
 }
 .box1 {
@@ -475,14 +473,14 @@ footer a {
   display: flex;
   justify-content: center;
   align-items: center;
-  translate: -30px 5px;
+  transform: translate(-30px, 5px);
 }
 .fonctionnement__container__box__boxFlex__text {
-  translate: 15px 9px;
+  transform: translate(15px, 9px);
 }
 .fonctionnement__container__box__boxFlex__icon {
   color: #747474;
-  translate: -10px 9px;
+  transform: translate(-10px, 9px);
 }
 
 .restaurants {
@@ -556,7 +554,7 @@ footer a {
 }
 .menu__container {
   border-radius: 30px;
-  translate: 0 -36px;
+  transform: translate(0, -36px);
   background: #f7f7f7;
 }
 .menu__container__category {
@@ -616,7 +614,7 @@ footer a {
 }
 
 #hearts__menu {
-  translate: -20% 23%;
+  transform: translate(-20%, 23%);
   position: relative;
 }
 
@@ -628,7 +626,7 @@ footer a {
   justify-content: space-between;
 }
 
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   body {
     background-color: #eaeaea;
   }
@@ -676,7 +674,7 @@ footer a {
   section__container__box__boxFlex__text,
   .fonctionnement__container__box__boxFlex__text {
     margin: auto;
-    translate: 15px 2%;
+    transform: translate(15px, 2%);
   }
   .menu__container {
     min-width: 450px;

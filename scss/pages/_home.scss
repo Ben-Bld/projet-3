@@ -66,17 +66,18 @@
                     display: flex;
                     justify-content: center;
                     align-items: center;
-                    translate: -30px 5px;
+                    transform: translate(-30px, 5px);
+                   
                 }
 
                 &__text {
-                    translate: 15px 9px;
+                    transform: translate(15px, 9px);
 
                 }
 
                 &__icon {
                     color: $icon-clr;
-                    translate: -10px 9px;
+                    transform: translate(-10px, 9px);
                 }
 
 

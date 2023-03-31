@@ -9,7 +9,7 @@
 
     &__container {
         border-radius: 30px;
-        translate: 0 -36px;
+        transform : translate(0, -36px) ;
         background: $third-background;
 
         &__category {
@@ -87,7 +87,7 @@
 }
 }
 #hearts__menu {
-    translate: -20% 23%;
+   transform: translate(-20%, 23%) ;
     position: relative;
 }
 

@@ -1,10 +1,13 @@
 //tablet 
-//media queries header
+//media queries header 
+$breakpoints: (
+    tablet: 768px 
+);
 
 
 //homepage
 
-@media (min-width: 768px) {
+@media screen and (min-width: map-get($breakpoints, tablet)) {
 
     body {
         background-color: $secondary-background;
@@ -55,9 +58,10 @@
 
                 &__boxFlex {
                     &__text {
-                        margin: auto;
-                        translate: 15px 2%
-                    }
+                        margin: auto;                       
+                        transform: translate(15px, 2%); 
+                     
+} 
                 }
 
             }
@@ -65,7 +69,7 @@
 
 
     }
-
+ 
 
 
     .menu__container {
