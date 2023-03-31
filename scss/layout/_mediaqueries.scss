@@ -84,6 +84,7 @@ $breakpoints: (
     max-width: 100%;
     margin: auto;
     background-color: $background;
+    padding-bottom: 4%;
 }
 
 .all4 {
@@ -107,6 +108,11 @@ header {
 #hearts__menu {
     padding-right: 4%;
 }
+
+.reservation, .menu {
+    background-color: $background;
+}
+
 }
 
 

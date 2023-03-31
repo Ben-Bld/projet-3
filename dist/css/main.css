@@ -682,6 +682,7 @@ footer a {
     max-width: 100%;
     margin: auto;
     background-color: white;
+    padding-bottom: 4%;
   }
   .all4 {
     display: flex;
@@ -701,5 +702,8 @@ footer a {
   }
   #hearts__menu {
     padding-right: 4%;
+  }
+  .reservation, .menu {
+    background-color: white;
   }
 }
