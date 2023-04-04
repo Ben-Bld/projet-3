@@ -688,7 +688,6 @@ footer a {
     display: flex;
     margin: auto;
     justify-content: space-evenly;
-    width: 85%;
     gap: 2%;
   }
   .menu__container__wrap1 {
@@ -703,7 +702,8 @@ footer a {
   #hearts__menu {
     padding-right: 4%;
   }
-  .reservation, .menu {
+  .reservation,
+  .menu {
     background-color: white;
   }
 }

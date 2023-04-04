@@ -1,9 +1,7 @@
 //tablet 
 //media queries header 
-$breakpoints: (
-    tablet: 768px ,
-    menu: 990px
-);
+$breakpoints: (tablet: 768px,
+    menu: 990px);
 
 
 //homepage
@@ -59,10 +57,10 @@ $breakpoints: (
 
                 &__boxFlex {
                     &__text {
-                        margin: auto;                       
-                        transform: translate(15px, 2%); 
-                     
-} 
+                        margin: auto;
+                        transform: translate(15px, 2%);
+
+                    }
                 }
 
             }
@@ -70,10 +68,10 @@ $breakpoints: (
 
 
     }
- 
 
 
-    
+
+
 }
 
 
@@ -81,39 +79,41 @@ $breakpoints: (
 
 
 @media screen and (min-width: map-get($breakpoints, menu)) {
-.menu__container{
-    max-width: 100%;
-    margin: auto;
-    background-color: $background;
-    padding-bottom: 4%;
-}
+    .menu__container {
+        max-width: 100%;
+        margin: auto;
+        background-color: $background;
+        padding-bottom: 4%;
 
-.all4 {
-    display: flex;
-    margin: auto;
-    justify-content: space-evenly;
-    width: 85%;
-    gap: 2%;
-}
+    }
+    .all4 {
+        display: flex;
+        margin: auto;
+        justify-content: space-evenly;
+        gap: 2%;
 
-.menu__container__wrap1 {
-    width: 80%;
-}
-header {
-    width: 100%;
-}
+    }
 
-.menu__container__title {
-    padding: 2% 0 2% 6%;
-}
-#hearts__menu {
-    padding-right: 4%;
-}
+   
+    .menu__container__wrap1 {
+        width: 80%;
+    }
 
-.reservation, .menu {
-    background-color: $background;
-}
+    header {
+        width: 100%;
+    }
+
+    .menu__container__title {
+        padding: 2% 0 2% 6%;
+    }
+
+    #hearts__menu {
+        padding-right: 4%;
+    }
+
+    .reservation,
+    .menu {
+        background-color: $background;
+    }
 
 }
-
-
