@@ -677,7 +677,7 @@ footer a {
     transform: translate(15px, 2%);
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 990px) {
   .menu__container {
     max-width: 100%;
     margin: auto;

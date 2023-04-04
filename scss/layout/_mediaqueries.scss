@@ -1,7 +1,8 @@
 //tablet 
 //media queries header 
 $breakpoints: (
-    tablet: 768px 
+    tablet: 768px ,
+    menu: 990px
 );
 
 
@@ -79,7 +80,7 @@ $breakpoints: (
 //Media queries page menu
 
 
-@media screen and (min-width: map-get($breakpoints, tablet)) {
+@media screen and (min-width: map-get($breakpoints, menu)) {
 .menu__container{
     max-width: 100%;
     margin: auto;
